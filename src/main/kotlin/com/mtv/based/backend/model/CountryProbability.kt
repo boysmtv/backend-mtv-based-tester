@@ -20,11 +20,3 @@ data class NameData(
     val name: String,
     val country: List<CountryProbability>
 )
-
-@Serializable
-data class BaseResponse<T>(
-    val code: String,
-    val message: String,
-    val data: T? = null,
-    val errors: List<ErrorDetail>? = null
-)
